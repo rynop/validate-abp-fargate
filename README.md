@@ -1,2 +1,3 @@
 # validate-abp-fargate
-Validating aws-blueprint fargate instructions
+
+validating [abp-fargate](https://github.com/rynop/validate-abp-fargate) instructions.
