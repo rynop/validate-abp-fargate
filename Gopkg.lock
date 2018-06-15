@@ -13,7 +13,7 @@
 
 [[projects]]
   branch = "master"
-  name = "github.com/rynop/abp-fargate"
+  name = "github.com/rynop/validate-abp-fargate"
   packages = ["rpc/publicservices"]
   revision = "b80f709a8fddb668e8734ad4f94d996bd7bf969a"
 

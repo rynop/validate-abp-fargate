@@ -31,7 +31,7 @@
 
 [[constraint]]
   branch = "master"
-  name = "github.com/rynop/abp-fargate"
+  name = "github.com/rynop/validate-abp-fargate"
 
 [[constraint]]
   name = "github.com/twitchtv/twirp"

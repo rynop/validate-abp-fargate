@@ -3,7 +3,7 @@ package blogserver
 import (
 	"context"
 
-	pb "github.com/rynop/abp-fargate/rpc/publicservices"
+	pb "github.com/rynop/validate-abp-fargate/rpc/publicservices"
 	"github.com/twitchtv/twirp"
 )
 
