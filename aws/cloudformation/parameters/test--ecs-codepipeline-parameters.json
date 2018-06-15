@@ -1,0 +1,23 @@
+{
+    "Parameters": {
+        "EcsCfClusterStackName": "validate-abp-fargate--ecs-cluster",
+        "CloudFrontCname": "test--validate-abp-fargate.newscyclemobile.com",
+        "VerifyFromCfHeaderVal": "fromCDN",
+        "AcmCertificateArn": "arn:aws:acm:us-east-1:254269105181:certificate/237e43db-2a50-4e70-b9f0-8f71585ce17b",
+        "TaskIamRoleArn": "arn:aws:iam::254269105181:role/test-validate-abp-fargate-master-im-EcsTaskRole-GWH988DZ5FIJ",
+        "SsmEnvPrefix": "/test/validate-abp-fargate/master/imgManip/ecsEnvs/",
+        "TaskCount": "1",
+        "TaskCpuUnits": "256",
+        "TaskMemory": "512",
+        "DeploymentMinHealthyTaskPercent": "50",
+        "DeploymentMaxTaskPercent": "200",
+        "ServiceMaxCapacity": "1",
+        "ServiceMinCapacity": "1",
+        "ServiceScaleUpAdjustment": "1",
+        "ServiceScaleDownAdjustment": "-1",
+        "ScaleUpCpuPeriods": "3",
+        "ScaleUpCpuPercentageThreshold": "50",
+        "ScaleDownCpuPeriods": "10",
+        "ScaleDownCpuPercentageThreshold": "20"
+    }
+}
