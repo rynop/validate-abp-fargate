@@ -34,7 +34,7 @@ func setupRoutes() http.Handler {
 }
 
 func main() {
-	//Dump all env vars
+	//Dump all env vars to logs
 	for _, pair := range os.Environ() {
 		fmt.Println(pair)
 	}
