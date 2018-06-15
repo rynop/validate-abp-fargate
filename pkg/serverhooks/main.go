@@ -2,7 +2,10 @@ package serverhooks
 
 import (
 	"context"
+	"fmt"
+	"log"
 	"net/http"
+	"os"
 
 	"github.com/twitchtv/twirp"
 )
@@ -30,6 +33,11 @@ func NewServerHooks() *twirp.ServerHooks {
 	hooks := &twirp.ServerHooks{}
 
 	hooks.RequestReceived = func(ctx context.Context) (context.Context, error) {
+		log.Printf("DUMPING ENV")
+		for _, pair := range os.Environ() {
+			fmt.Println(pair)
+		}
+
 		if !checkAuthN(ctx) {
 			twerr := twirp.NewError(twirp.Unauthenticated, "Unauthenticated")
 			return nil, twerr
