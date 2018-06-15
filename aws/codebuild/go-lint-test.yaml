@@ -1,7 +1,7 @@
 version: 0.2
 env:
   variables:
-    GO_PACKAGE: "github.com/rynop/validate-apb-fargate"
+    GO_PACKAGE: "github.com/rynop/validate-abp-fargate"
 
 phases:
   install:
